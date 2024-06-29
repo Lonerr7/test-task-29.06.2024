@@ -1,0 +1,203 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.body {
+  position: relative;
+}
+
+// === main ===
+
+.main {
+  padding-block: 40px;
+  padding-inline: 36px;
+  height: 456px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light;
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__left {
+    margin-right: 20px;
+    margin-left: 72px;
+    padding-block: 94px;
+  }
+
+  &__leftItems {
+    max-width: 538px;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 160%;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: $lightblue;
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 160%;
+    margin-bottom: 36px;
+    color: $gray;
+    text-align: justify;
+  }
+
+  &__btn {
+    width: 340px;
+    padding: 20px 12px 20px 24px;
+    border-radius: 60px;
+    color: $white;
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+  }
+
+  &__btnImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 40px;
+    background-color: $white;
+  }
+
+  &__right {
+    height: 456px;
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.modal {
+  display: none;
+  background-color: $light;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 24px;
+
+  &__closeContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+  }
+
+  &__close {
+    padding: 14px;
+    background-color: $white;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: auto;
+    margin-bottom: 18px;
+  }
+
+  &__formControl {
+    margin-bottom: 4px;
+
+    &:nth-child(2) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    padding: 24px;
+    background-color: $input-bg;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: auto;
+    border-radius: 10px;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: auto;
+      color: $lightblue;
+    }
+  }
+
+  &__formControl_checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__input_checkbox {
+    margin-right: 14px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__link {
+    font-size: 20px;
+    font-weight: 500;
+    color: $blue;
+    margin-bottom: 36px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 18px;
+    border-radius: 4px;
+    background-color: $blue;
+    margin-bottom: 4px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn_transparent {
+    background-color: transparent;
+    outline: 1px solid $blue;
+    color: $blue;
+  }
+}
+
+.visible {
+  display: block;
+}
+
+// === /main ===
+
+@import 'media';

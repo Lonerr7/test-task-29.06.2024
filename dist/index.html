@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240629151409" />
+  <title>Тестовое задание</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap&_v=20240629151409" rel="stylesheet">
+</head>
+
+  <body>
+    <main class="main">
+  <div class="main__inner">
+    <div class="main__left">
+      <div class="main__leftItems">
+        <h1 class="main__title">Демо-версия</h1>
+        <p class="main__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить </p>
+        <button class="main__btn">
+          <span class="main__btnText">Попробовать бесплатно</span>
+          <span class="main__btnImgContainer">
+            <img class="main__btnImg" src="images/arrow.svg" alt="arrow">
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="main__right">
+      <!-- <picture><source srcset="images/hero.webp" type="image/webp"><img class="main__img" src="images/hero.png" alt="hero"></picture> -->
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal__closeContainer">
+      <button class="modal__close">
+        <img class="modal__cross" src="images/cross.svg" alt="cross">
+      </button>
+    </div>
+    <div class="modal__items">
+      <h2 class="modal__title">Войти в систему</h2>
+      <form class="modal__form">
+        <div class="modal__formControl">
+          <label for="email" hidden ></label>
+          <input class="modal__input" id="email" name="email" type="text" placeholder="Email/Телефон">
+        </div>
+        <div class="modal__formControl">
+          <label for="password" hidden ></label>
+          <input class="modal__input" id="password" name="password" type="password" placeholder="Пароль">
+        </div>
+        <div class="modal__formControl modal__formControl_checkbox">
+          <input class="modal__input_checkbox" id="remember_password" name="remember_password" type="checkbox">
+          <label for="remember_password">Запомнить пароль</label>
+        </div>
+        <a class="modal__link" href="#">Восстановить</a>
+
+        <div class="modal__buttons">
+          <button class="modal__btn">Войти</button>
+          <a class="modal__btn modal__btn_transparent" href="#">Зарегестрироваться</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+  <script src="js/app.min.js?_v=20240629151409"></script>
+  </body>
+</html>
